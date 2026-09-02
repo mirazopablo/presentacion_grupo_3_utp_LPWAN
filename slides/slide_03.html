@@ -1,0 +1,32 @@
+<!-- SLIDE 3: CHIRP SPREAD SPECTRUM (CSS) -->
+<div class="slide" data-tag="LPWAN | TEMA 4.2" data-title="Fundamentos de Modulación Chirp Spread Spectrum">
+  <div style="display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 14px; height: 100%; min-height: 0;">
+    <div style="display: grid; grid-template-columns: 36% 64%; gap: 14px; align-items: stretch;">
+      <div class="card card-accent" style="padding: 12px 14px;">
+        <div class="card-title">Sensibilidad antes que potencia</div>
+        <p style="font-size: 0.82rem; color: #cbd5e1; line-height: 1.35;">
+          LoRa no necesita “gritar más fuerte”: usa chirps para que el receptor pueda detectar señales muy débiles y ahorrar batería.
+        </p>
+      </div>
+      <div class="card card-primary" style="padding: 10px 14px;">
+        <ul class="feature-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px;">
+          <li><strong>Chirp:</strong> la frecuencia cambia continuamente en el tiempo dentro de un ancho de banda.</li>
+          <li><strong>Ascendente:</strong> sube desde f<sub>min</sub> hasta f<sub>max</sub>.</li>
+          <li><strong>Descendente:</strong> baja desde f<sub>max</sub> hasta f<sub>min</sub>.</li>
+          <li><strong>Símbolo LoRa:</strong> el inicio del chirp codifica los bits según el SF.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; min-height: 0;">
+      <div class="img-box" style="height: 100%; min-height: 0;">
+        <img src="images/chirp_ascendente.png" alt="Chirp Ascendente">
+        <div class="img-caption">Chirp ascendente: la frecuencia aumenta con el tiempo</div>
+      </div>
+      <div class="img-box" style="height: 100%; min-height: 0;">
+        <img src="images/chirp_descendente.png" alt="Chirp Descendente">
+        <div class="img-caption">Chirp descendente: la frecuencia disminuye con el tiempo</div>
+      </div>
+    </div>
+  </div>
+</div>

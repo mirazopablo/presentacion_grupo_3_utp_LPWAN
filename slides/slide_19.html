@@ -1,0 +1,63 @@
+<!-- SLIDE 19: PRACTICAL CASE STUDY DENTAL CLINIC -->
+<div class="slide" data-tag="CASO REAL | TEMA 6.7" data-title="Reestructuración Instituto Odontológico: Cat 6A F/UTP">
+  <div style="display: grid; grid-template-columns: 38% 60%; gap: 14px; height: 100%;">
+
+    <!-- LEFT COLUMN: BULLETED LIST & SUMMARY CARDS -->
+    <div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+
+      <div class="card card-accent" style="padding: 8px 12px;">
+        <div class="card-title" style="font-size: 0.85rem;">Solución Adoptada: Cat 6A (Clase E<sub>A</sub>) F/UTP</div>
+        <p style="font-size: 0.72rem; color: #cbd5e1; margin-top: 2px;">
+          Cableado horizontal F/UTP + Backbone vertical en Fibra Óptica OM3/OM4 entre PB y 1.º piso. Soporta tráfico
+          DICOM sin comprimir (Carestream CS 8100) y PoE+.
+        </p>
+      </div>
+
+      <div class="card card-primary" style="flex: 1; padding: 10px 12px; overflow-y: auto;">
+        <div class="card-title" style="font-size: 0.83rem; margin-bottom: 6px; color: var(--accent);">
+          Desglose por Sector (Diagnóstico &amp; Solución)
+        </div>
+        <ul class="feature-list" style="font-size: 0.72rem; line-height: 1.35;">
+          <li>
+            <strong style="color: var(--accent);">Rack &amp; Servidor Principal:</strong><br>
+            <span style="color: #f87171;">• Inicial:</span> Windows 7 obsoleto, router ISP sin segmentación.<br>
+            <span style="color: #4ade80;">• Solución:</span> Gabinete Rack 19", Servidor OS/RAID, Firewall y Switch
+            administrable con VLANs (Datos, Rayos X, Wi-Fi).
+          </li>
+          <li style="margin-top: 6px;">
+            <strong style="color: var(--accent);">Planta Baja (5 Consultorios + Rayos X):</strong><br>
+            <span style="color: #f87171;">• Inicial:</span> UTP directo al router, ruido EMI clínica.<br>
+            <span style="color: #4ade80;">• Solución:</span> Tendido horizontal Cat 6A F/UTP apantallado. Enlace directo
+            gigabit para Maquina de Panoramicas Carestream CS 8100.
+          </li>
+          <li style="margin-top: 6px;">
+            <strong style="color: var(--accent);">Primer Piso (7 Consultorios):</strong><br>
+            <span style="color: #f87171;">• Inicial:</span> Enlace Wi-Fi vertical colgado e inestable.<br>
+            <span style="color: #4ade80;">• Solución:</span> TR Secundario en 1.º piso unido por Backbone de Fibra/Cat
+            6A + AP Wi-Fi 6 PoE+.
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN: PSEUDO SCROLLVIEW FOR HIGH-RES DIAGRAMS -->
+    <div style="display: flex; flex-direction: column; gap: 14px; height: 100%; overflow-y: auto; padding-right: 6px;">
+
+      <div class="img-box" style="flex-shrink: 0;">
+        <img src="images/estado_Actual_instituto.jpeg" alt="Estado Actual Instituto Odontológico"
+          style="width: 100%; height: auto; display: block;">
+        <div class="img-caption">Figura 9A. Estado Inicial (Diagnóstico / Vulnerabilidades) - Clic para ampliar</div>
+      </div>
+
+      <div class="img-box" style="flex-shrink: 0;">
+        <img src="images/estado_final_instituto.jpeg" alt="Estado Final Reestructurado Instituto Odontológico"
+          style="width: 100%; height: auto; display: block;">
+        <div class="img-caption">Figura 9B. Estado Final Reestructurado (ISO/IEC 11801 &amp; TIA-568) - Clic para
+          ampliar</div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<!-- SLIDE 4: DECHIRPING & FFT DEMODULATION -->
+<div class="slide" data-tag="LPWAN | TEMA 4.2.4" data-title="Demodulación Digital LoRa: Dechirping & FFT">
+  <div class="grid-2col-60-40">
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div class="card card-primary">
+        <div class="card-title">Proceso de Rescate de Señal en 3 Pasos (DSP)</div>
+      </div>
+      <ul class="feature-list">
+        <li><strong>Paso 1 (Generación Local):</strong> El receptor sintetiza un <em>Down-Chirp</em> conjugado local sin modulación de frecuencia decreciente.</li>
+        <li><strong>Paso 2 (Dechirping):</strong> Se multiplica la señal recibida por el Down-Chirp local. La pendiente lineal se cancela exactamente (+&mu; - &mu; = 0), colapsando el chirp en un <strong>tono sinusoidal puro</strong> de frecuencia constante.</li>
+        <li><strong>Paso 3 (FFT de 2<sup>SF</sup> puntos):</strong> La FFT calcula el espectro. Mientras el ruido térmico se dispersa aleatoriamente en todos los bins, la energía del tono se concentra en <strong>un único bin espectral</strong> indicando el valor del símbolo digital.</li>
+      </ul>
+    </div>
+    <div class="img-box">
+      <img src="images/como_funciona_chirp_spread_sprectrum.png" alt="Cómo Funciona Chirp Spread Spectrum">
+      <div class="img-caption">Figura 3. Cadena Completa DSP: Señal Recibida → Dechirping → Pico FFT</div>
+    </div>
+  </div>
+</div>

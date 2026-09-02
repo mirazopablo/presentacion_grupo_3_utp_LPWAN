@@ -1,0 +1,28 @@
+<!-- SLIDE 9: LORA VS LORAWAN (OSI MODEL) -->
+<div class="slide" data-tag="LPWAN | TEMA 4.4" data-title="Diferencias entre LoRa (PHY) y LoRaWAN (MAC/Red)">
+  <div class="grid-2col-60-40">
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div class="card card-primary">
+        <div class="card-title">LoRa = Capa Física (Capa 1 OSI)</div>
+        <p style="font-size: 0.8rem; color: #cbd5e1;">Tecnología propietaria de Semtech. Define la modulación por radiofrecuencia CSS en enlaces punto a punto (P2P).</p>
+        <ul class="feature-list" style="margin-top: 8px;">
+          <li>No sabe cómo enrutar paquetes, no gestiona identificadores de red, ni previene colisiones entre dispositivos.</li>
+        </ul>
+      </div>
+      <div class="card card-accent">
+        <div class="card-title">LoRaWAN = Capa MAC y Red (Capas 2 y 3 OSI)</div>
+        <p style="font-size: 0.8rem; color: #cbd5e1;">Estándar abierto (ITU-T Y.4480). Topología Estrella de Estrellas (Star-of-Stars) orquestada por Network Server.</p>
+        <ul class="feature-list" style="margin-top: 8px;">
+          <li><strong>Control de acceso asíncrono (ALOHA puro):</strong> Los nodos se despiertan, transmiten y vuelven a dormir.</li>
+          <li><strong>Clases A / B / C:</strong> Clase A (Autonomía máxima), Clase B (Ventajas sincronizadas), Clase C (Recepción continua).</li>
+          <li><strong>Tasa Adaptativa (ADR):</strong> El servidor ajusta SF y potencia P<sub>tx</sub> dinámicamente.</li>
+          <li><strong>Seguridad AES-128:</strong> Doble clave independiente: NwkSKey (Red) y AppSKey (Datos).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/lorawan.png" alt="LoRa vs LoRaWAN en Modelo OSI">
+      <div class="img-caption">Figura 5. Pila de Protocolos LoRa vs LoRaWAN en Modelo OSI</div>
+    </div>
+  </div>
+</div>

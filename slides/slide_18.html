@@ -1,0 +1,78 @@
+<!-- SLIDE 18: STRUCTURED CABLING ARCHITECTURE -->
+<div class="slide" data-tag="CABLEADO ESTRUCTURADO | TEMA 6.6" data-title="Arquitectura Normalizada & Subsistemas ANSI/TIA-568">
+  <div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+    
+    <!-- HEADER CARD -->
+    <div class="card card-accent" style="padding: 10px 14px;">
+      <div class="card-title">Topología Jerárquica en Estrella Normalizada (ANSI/TIA-568.0-D &amp; ISO/IEC 11801)</div>
+      <p style="font-size: 0.76rem; color: #cbd5e1; margin-top: 2px;">
+        Estructura modular dividida en subsistemas independientes que garantiza compatibilidad, escalabilidad y mantenimiento simplificado.
+      </p>
+    </div>
+
+    <!-- 4 SUBSYSTEMS GRID -->
+    <div class="grid-4col" style="flex: 1;">
+      <div class="card card-primary" style="padding: 10px 12px;">
+        <div class="card-title" style="font-size: 0.83rem; color: var(--accent);">1. Área de Trabajo (WA)</div>
+        <ul class="feature-list" style="font-size: 0.72rem;">
+          <li>Desde toma fija de pared/suelo (TO Jack RJ45) a equipo final.</li>
+          <li>Patch cords flexibles con calibre 26-28 AWG.</li>
+          <li>Longitud máxima combinada &le; 5 m.</li>
+        </ul>
+      </div>
+
+      <div class="card card-primary" style="padding: 10px 12px;">
+        <div class="card-title" style="font-size: 0.83rem; color: var(--accent);">2. Cableado Horizontal</div>
+        <ul class="feature-list" style="font-size: 0.72rem;">
+          <li>Estrella pura desde WA al Patch Panel del TR.</li>
+          <li>Tramo rígido (Permanent Link): máx. 90 m.</li>
+          <li>Canal total (Channel): 90 m + 10 m patch cords = 100 m.</li>
+        </ul>
+      </div>
+
+      <div class="card card-primary" style="padding: 10px 12px;">
+        <div class="card-title" style="font-size: 0.83rem; color: var(--accent);">3. Backbone Vertical</div>
+        <p style="font-size: 0.72rem; color: #cbd5e1; margin-bottom: 4px;">
+          Interconexión de Cuartos de Telecom (TR), Sala de Equipos (ER) y Entrada de Servicios (EF).
+        </p>
+        <ul class="feature-list" style="font-size: 0.72rem;">
+          <li>Fibra Óptica OM4/OM5 o Monomodo OS2.</li>
+          <li>Soporta tráficos multichasis de alta velocidad.</li>
+        </ul>
+      </div>
+
+      <div class="card card-primary" style="padding: 10px 12px;">
+        <div class="card-title" style="font-size: 0.83rem; color: var(--accent);">4. Cuartos TR / ER / EF</div>
+        <ul class="feature-list" style="font-size: 0.72rem;">
+          <li>Espacios acondicionados con Racks de 19".</li>
+          <li>Switches PoE, Patch Panels y UPS.</li>
+          <li>Barra de Tierra Principal (TMGB) &lt; 5 &Omega;.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- INSTALLATION & CANALIZATION RULES (TIA-569-D) -->
+    <div class="card card-accent" style="padding: 10px 14px;">
+      <div class="card-title" style="font-size: 0.83rem; margin-bottom: 6px;">Reglas Normativas de Tendido e Instalación (ANSI/TIA-569-D)</div>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+        <div style="font-size: 0.73rem; color: #cbd5e1;">
+          <strong style="color: var(--accent);">Radio de Curvatura:</strong><br>
+          r &ge; 4D (4 veces el diámetro exterior) para evitar alterar la geometría del trenzado.
+        </div>
+        <div style="font-size: 0.73rem; color: #cbd5e1;">
+          <strong style="color: var(--accent);">Destrenzado Máximo:</strong><br>
+          &le; 13 mm (0.5") en remates de conectores RJ45 para resguardar la inmunidad al NEXT.
+        </div>
+        <div style="font-size: 0.73rem; color: #cbd5e1;">
+          <strong style="color: var(--accent);">Fuerza de Tracción:</strong><br>
+          &le; 110 N (25 lbf) durante el tendido para no estirar los conductores de cobre.
+        </div>
+        <div style="font-size: 0.73rem; color: #cbd5e1;">
+          <strong style="color: var(--accent);">Factor de Llenado:</strong><br>
+          &le; 40% de ocupación inicial en canaletas (reserva del 60% para futuras expansiones).
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

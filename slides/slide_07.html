@@ -1,0 +1,36 @@
+<!-- SLIDE 7: LPWAN COMPARISON MATRIX -->
+<div class="slide" data-tag="LPWAN | TEMA 4.3" data-title="Matriz Comparativa: LoRaWAN, NB-IoT y Sigfox">
+  <div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+    <div style="display: grid; grid-template-columns: 28% 70%; gap: 14px; align-items: center;">
+      <div class="img-box" style="height: 110px;">
+        <img src="images/redes_lpwan.png" alt="Espectro Libre vs Licenciado">
+      </div>
+      <div class="card card-accent" style="padding: 8px 12px;">
+        <span style="font-size: 0.8rem; color: var(--accent); font-weight: 700;">FILOSOFÍAS DE RED:</span>
+        <span style="font-size: 0.78rem; color: #cbd5e1;">LoRa (Espectro ISM libre, Redes Privadas/Comunitarias), NB-IoT (Espectro Licenciado Celular 4G/5G, Operador), Sigfox (Red Propietaria Global UNB).</span>
+      </div>
+    </div>
+
+    <div style="flex: 1; overflow-y: auto;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Criterio / Parámetro</th>
+            <th>LoRa / LoRaWAN</th>
+            <th>NB-IoT (3GPP)</th>
+            <th>Sigfox</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Banda Espectral</strong></td><td>Libre / ISM (868 / 915 MHz)</td><td>Licenciada (4G / 5G LTE)</td><td>Libre / ISM (868 / 902 MHz)</td></tr>
+          <tr><td><strong>Modulación</strong></td><td>Chirp Spread Spectrum (CSS)</td><td>OFDMA / SC-FDMA</td><td>Ultra Narrow Band (UNB)</td></tr>
+          <tr><td><strong>Alcance (Urb/Rur)</strong></td><td>2 – 15 km / 15 – 50 km</td><td>1 – 10 km / 10 – 30 km</td><td>10 – 15 km / 30 – 50+ km</td></tr>
+          <tr><td><strong>Velocidad Datos</strong></td><td>0.3 kbps – 50 kbps</td><td>20 kbps – 250 kbps</td><td>~100 bps</td></tr>
+          <tr><td><strong>Payload Máximo</strong></td><td>51 – 222 Bytes</td><td>Cientos de Bytes</td><td>12 B (UL) / 8 B (DL)</td></tr>
+          <tr><td><strong>Redes Privadas</strong></td><td><span class="badge badge-accent">SÍ (CAPEX 0 / OPEX 0)</span></td><td>NO (Depende de Telco)</td><td>NO (Red Sigfox)</td></tr>
+          <tr><td><strong>Modelo de Costos</strong></td><td>CAPEX Inicial (Gateways)</td><td>OPEX SIM (Abono Mensual)</td><td>OPEX Suscripción Anual</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

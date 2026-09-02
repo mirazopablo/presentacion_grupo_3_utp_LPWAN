@@ -1,0 +1,25 @@
+<!-- SLIDE 6: ORTHOGONALITY & DUTY CYCLE -->
+<div class="slide" data-tag="LPWAN | TEMA 4.2.6 - 4.2.8" data-title="Ortogonalidad entre SFs, Duty Cycle y Autonomía">
+  <div class="grid-2col-60-40">
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div class="card card-primary">
+        <div class="card-title">Ortogonalidad Cuasi-Perfecta entre SFs</div>
+        <p style="font-size: 0.82rem; color: #cbd5e1;">
+          Chirps con distinto SF tienen diferentes tasas de barrido (&mu; = BW / T<sub>s</sub>). Al aplicar Dechirping de SF12 sobre SF7, la señal no colapsa y permanece como ruido inofensivo. Permite demodular hasta 8-16 paquetes simultáneos en la misma frecuencia.
+        </p>
+      </div>
+      <div class="card card-accent">
+        <div class="card-title">Ciclo de Trabajo (Duty Cycle) & Reposo</div>
+        <ul class="feature-list">
+          <li><strong>Sleep Mode (99%):</strong> Microcontrolador y radio en ultra bajo consumo (&mu;A).</li>
+          <li><strong>Transmisión Breve (1%):</strong> Despertar periódico, lectura de sensor y emisión en milisegundos.</li>
+          <li><strong>Normativa ISM:</strong> Restricción regulatoria del 1% de ocupación de canal.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/ciclo_de_trabajo_sensor_lora.png" alt="Ciclo de Trabajo Sensor LoRa">
+      <div class="img-caption">Figura 4. Ciclo Operativo: Reposo Prolongado vs Transmisión Breve</div>
+    </div>
+  </div>
+</div>

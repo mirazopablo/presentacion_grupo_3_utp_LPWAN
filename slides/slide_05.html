@@ -1,0 +1,47 @@
+<!-- SLIDE 5: PROCESSING GAIN & SENSITIVITY -->
+<div class="slide" data-tag="LPWAN | TEMA 4.2.5" data-title="Ganancia de Procesamiento & Sensibilidad Bajo el Ruido">
+  <div style="display: flex; flex-direction: column; gap: 14px; height: 100%;">
+    <div class="grid-3col">
+      <div class="metric-card">
+        <div class="metric-value">36.12 dB</div>
+        <div class="metric-label">Ganancia de Procesamiento (SF12)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">-20.0 dB</div>
+        <div class="metric-label">SNR Mínimo Requerido (SF12)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">-137.0 dBm</div>
+        <div class="metric-label">Sensibilidad Rx (BW 125kHz)</div>
+      </div>
+    </div>
+    
+    <div style="flex: 1;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Spreading Factor (SF)</th>
+            <th>Puntos FFT (2<sup>SF</sup>)</th>
+            <th>Ganancia Procesamiento (PG)</th>
+            <th>SNR<sub>min</sub> Requerido</th>
+            <th>Sensibilidad Típica (BW=125kHz)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>SF7</strong></td><td>128</td><td>21.07 dB</td><td>-7.5 dB</td><td>-124.5 dBm</td></tr>
+          <tr><td><strong>SF8</strong></td><td>256</td><td>24.08 dB</td><td>-10.0 dB</td><td>-127.0 dBm</td></tr>
+          <tr><td><strong>SF9</strong></td><td>512</td><td>27.09 dB</td><td>-12.5 dB</td><td>-129.5 dBm</td></tr>
+          <tr><td><strong>SF10</strong></td><td>1024</td><td>30.10 dB</td><td>-15.0 dB</td><td>-132.0 dBm</td></tr>
+          <tr><td><strong>SF11</strong></td><td>2048</td><td>33.11 dB</td><td>-17.5 dB</td><td>-134.5 dBm</td></tr>
+          <tr><td><strong>SF12</strong></td><td>4096</td><td>36.12 dB</td><td>-20.0 dB</td><td>-137.0 dBm</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card card-accent" style="padding: 8px 12px;">
+      <span style="font-size: 0.78rem; color: #cbd5e1;">
+        <strong>Insight Físico:</strong> En SF12 (SNR = -20 dB), el receptor LoRa rescata paquetes cuya potencia es <strong>100 veces menor</strong> que el piso de ruido térmico ambiental.
+      </span>
+    </div>
+  </div>
+</div>

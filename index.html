@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP1: Redes LPWAN y Cableado Estructurado - Presentación Interactiva</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Centralized CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="presentation-container">
+    <div class="slide-deck">
+      
+      <!-- TOP PROGRESS BAR -->
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+
+      <!-- HEADER BAR -->
+      <div class="slide-header">
+        <div class="header-tag" id="header-tag">TEMA 4 & 6 | PRESENTACIÓN TÉCNICA</div>
+        <div class="header-title" id="header-title">Redes LPWAN & Cableado Estructurado</div>
+        <div>
+          <button class="nav-btn" id="fullscreen-btn" onclick="toggleFullscreen()">
+            <span>Fullscreen</span> <span class="kbd">F</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- SLIDE VIEWPORT (DYNAMICALLY POPULATED FROM slides/slide_XX.html) -->
+      <div class="slide-content-area" id="slide-container">
+        <!-- Slide contents are loaded asynchronously via js/presentation.js -->
+      </div>
+
+      <!-- FOOTER BAR -->
+      <div class="slide-footer">
+        <div>
+          <span>Navegación: </span>
+          <span class="kbd">←</span> <span class="kbd">→</span> o <span class="kbd">Espacio</span>
+        </div>
+        <div id="slide-counter" style="font-family: var(--font-code); font-weight: 700; color: var(--accent);">
+          1 / 20
+        </div>
+        <div>
+          <button class="nav-btn" onclick="prevSlide()">❮ Ant</button>
+          <button class="nav-btn" onclick="nextSlide()" style="margin-left: 6px;">Sig ❯</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL FOR FULLSCREEN IMAGE ZOOM -->
+  <div id="image-lightbox" aria-hidden="true">
+    <button class="close-lightbox" aria-label="Cerrar">×</button>
+    <img alt="Vista ampliada">
+    <div class="zoom-hint">Clic fuera de la imagen o Esc para cerrar</div>
+  </div>
+
+  <!-- Centralized JS Engine & Dynamic Loader -->
+  <script src="js/presentation.js"></script>
+</body>
+</html>

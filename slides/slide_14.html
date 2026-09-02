@@ -1,0 +1,40 @@
+<!-- SLIDE 14: PHYSICAL PHENOMENA & LIMITS -->
+<div class="slide" data-tag="CABLEADO ESTRUCTURADO | TEMA 6.2.1 - 6.2.4" data-title="Física del Cableado: Skin Effect, NEXT y Return Loss">
+  <div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+    <div class="grid-3col">
+      <div class="card card-primary" style="padding: 10px;">
+        <div class="card-title" style="font-size: 0.85rem;">Skin Effect (Efecto Piel)</div>
+        <p style="font-size: 0.74rem; color: #cbd5e1;">A alta frecuencia, los electrones se desplazan a la superficie del cobre, reduciendo el área útil y aumentando la resistencia en CA.</p>
+      </div>
+      <div class="card card-accent" style="padding: 10px;">
+        <div class="card-title" style="font-size: 0.85rem;">NEXT &amp; PS-NEXT</div>
+        <p style="font-size: 0.74rem; color: #cbd5e1;">Acoplamiento inductivo/capacitivo indeseado entre pares en el extremo transmisor. Un valor mayor en dB indica mayor aislamiento.</p>
+      </div>
+      <div class="card card-primary" style="padding: 10px;">
+        <div class="card-title" style="font-size: 0.85rem;">Return Loss (Reflexión)</div>
+        <p style="font-size: 0.74rem; color: #cbd5e1;">Potencia reflejada por desadaptaciones de impedancia (Z<sub>0</sub> = 100 &Omega;). Causado por destrenzado &gt; 13mm o curvaturas r &lt; 4D.</p>
+      </div>
+    </div>
+
+    <div style="flex: 1; overflow-y: auto;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Clase / Categoría</th>
+            <th>Ancho de Banda</th>
+            <th>NEXT Mín. @ 100 MHz</th>
+            <th>NEXT Mín. @ Frec. Máx.</th>
+            <th>Return Loss Mín. @ Frec. Máx.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Cat 5e (Clase D)</strong></td><td>100 MHz</td><td>35.3 dB</td><td>35.3 dB (@ 100 MHz)</td><td>12.0 dB (@ 100 MHz)</td></tr>
+          <tr><td><strong>Cat 6 (Clase E)</strong></td><td>250 MHz</td><td>42.3 dB (+7dB vs 5e)</td><td>35.3 dB (@ 250 MHz)</td><td>10.0 dB (@ 250 MHz)</td></tr>
+          <tr><td><strong>Cat 6A (Clase E<sub>A</sub>)</strong></td><td>500 MHz</td><td>42.3 dB</td><td>24.8 dB (@ 500 MHz)</td><td>8.0 dB (@ 500 MHz)</td></tr>
+          <tr><td><strong>Cat 7 (S/FTP)</strong></td><td>600 MHz</td><td>72.4 dB (Blindado)</td><td>60.4 dB (@ 600 MHz)</td><td>8.0 dB (@ 600 MHz)</td></tr>
+          <tr><td><strong>Cat 8.1 (Clase I)</strong></td><td>2000 MHz</td><td>75.4 dB</td><td>44.5 dB (@ 2000 MHz)</td><td>6.0 dB (@ 2000 MHz)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

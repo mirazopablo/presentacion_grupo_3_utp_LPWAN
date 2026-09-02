@@ -1,0 +1,52 @@
+<!-- SLIDE 15: POWER OVER ETHERNET (POE) & HEATING -->
+<div class="slide" data-tag="CABLEADO ESTRUCTURADO | TEMA 6.3" data-title="Power Over Ethernet (PoE) &amp; Efectos Térmicos">
+  <div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+    
+    <!-- CONCEPTO & DEFINICIÓN POE -->
+    <div class="card card-accent" style="padding: 10px 14px;">
+      <div class="card-title">Concepto Fundacional: Power over Ethernet (PoE - IEEE 802.3)</div>
+      <p style="font-size: 0.77rem; color: #cbd5e1; line-height: 1.35; margin-top: 3px;">
+        Técnica estandarizada que permite alimentar eléctricamente dispositivos de red (<strong>PD</strong>: Cámaras IP, APs Wi-Fi, Teléfonos VoIP) transmitiendo energía DC continua y datos Gigabit a través del mismo cable de par trenzado de cobre desde un equipo inyector (<strong>PSE</strong>: Switch PoE / Inyector Midspan), eliminando fuentes y tomacorrientes independientes.
+      </p>
+    </div>
+
+    <!-- TABLA DE ESTÁNDARES IEEE POE -->
+    <div style="flex: 1; overflow-y: auto;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Estándar IEEE</th>
+            <th>Denominación</th>
+            <th>Potencia PSE</th>
+            <th>Potencia PD</th>
+            <th>Pares Usados</th>
+            <th>Categoría Mínima</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>IEEE 802.3af</strong></td><td>PoE Tipo 1</td><td>15.4 W</td><td>12.95 W</td><td>2 pares (Alt A / Alt B)</td><td>Cat 3 / Cat 5e</td></tr>
+          <tr><td><strong>IEEE 802.3at</strong></td><td>PoE+ Tipo 2</td><td>30.0 W</td><td>25.5 W</td><td>2 pares (Alt A / Alt B)</td><td>Cat 5e</td></tr>
+          <tr><td><strong>IEEE 802.3bt</strong></td><td>PoE++ Tipo 3</td><td>60.0 W</td><td>51.0 W</td><td>4 pares (4PPoE)</td><td>Cat 6 / Cat 6A</td></tr>
+          <tr><td><strong>IEEE 802.3bt</strong></td><td>High-Power Tipo 4</td><td>90.0 W</td><td>71.3 - 73 W</td><td>4 pares (4PPoE)</td><td>Cat 6A Obligatorio</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- TÉRMINOS & EFECTOS TÉRMICOS -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div class="card card-accent" style="padding: 10px 14px;">
+        <div class="card-title">Calentamiento en Mazos (Ley de Joule)</div>
+        <p style="font-size: 0.75rem; color: #cbd5e1;">
+          La corriente inyectada disipa calor por resistencia (P = I<sup>2</sup>R). En mazos apretados de cables, el incremento de temperatura aumenta la Pérdida de Inserción (<strong>+0.4% por °C</strong> sobre 20°C).
+        </p>
+      </div>
+      <div class="card card-primary" style="padding: 10px 14px;">
+        <div class="card-title">Mitigaciones TSB-184-A / TIA-568.2-D</div>
+        <p style="font-size: 0.75rem; color: #cbd5e1;">
+          Emplear conductores de calibre más grueso <strong>23 AWG (Cat 6A)</strong>, restringir mazos a 12-24 cables y aplicar <em>derating</em> de distancia (reducir el canal a 75m si T &gt; 45°C).
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

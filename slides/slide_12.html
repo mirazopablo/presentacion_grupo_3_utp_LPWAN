@@ -1,0 +1,105 @@
+<!-- SLIDE 12: NORMATIVE FRAMEWORKS ANSI/TIA VS ISO/IEC -->
+<div class="slide" data-tag="CABLEADO ESTRUCTURADO | TEMA 6.1"
+  data-title="Normativas de Cableado: ANSI/TIA vs. ISO/IEC 11801">
+  <div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+    
+    <!-- TOP ROW: 2 CARDS + CAT 7 CONNECTORS THUMBNAIL -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr 170px; gap: 12px; align-items: stretch;">
+      <div class="card card-primary" style="padding: 10px 14px;">
+        <div class="card-title">ANSI/TIA-568.2-D (Norteamérica / Argentina)</div>
+        <p style="font-size: 0.76rem; color: #cbd5e1; margin-top: 2px;">
+          Clasifica por <strong>Categorías</strong> (Cat 5e, 6, 6A, 8). Mantiene compatibilidad mecánica directa con conector RJ45.
+        </p>
+      </div>
+
+      <div class="card card-accent" style="padding: 10px 14px;">
+        <div class="card-title">ISO/IEC 11801-1 (Internacional / Europa)</div>
+        <p style="font-size: 0.76rem; color: #cbd5e1; margin-top: 2px;">
+          Clasifica el canal por <strong>Clases de Enlace</strong> (Class A a Class II). Reconoció Cat 7/7A con conectores no-RJ45 (TERA, GG45, ARJ45).
+        </p>
+      </div>
+
+      <div class="img-box" style="height: 100%; border-radius: 8px; padding: 4px;">
+        <img src="images/CONECTORES_CAT_7.jpeg" alt="Conectores Especiales Cat 7 / 7A (TERA, GG45, ARJ45)" style="object-fit: contain; width: 100%; height: 100%; cursor: pointer;">
+        <div class="img-caption" style="font-size: 0.65rem; padding: 2px 4px;">Conectores Cat 7/7A (Ampliar)</div>
+      </div>
+    </div>
+
+    <!-- MAIN TABLE -->
+    <div style="flex: 1; overflow-y: auto;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Clase ISO/IEC</th>
+            <th>Frecuencia máx.</th>
+            <th>Categoría ANSI/TIA</th>
+            <th>Aplicaciones típicas / Estándar Ethernet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Clase A</strong></td>
+            <td>Hasta 100 kHz</td>
+            <td>Cat 1 / Cat 2</td>
+            <td>Telefonía analógica básica y control de baja frecuencia</td>
+          </tr>
+          <tr>
+            <td><strong>Clase B</strong></td>
+            <td>Hasta 1 MHz</td>
+            <td>Cat 3</td>
+            <td>Terminales de datos de baja velocidad, PBX</td>
+          </tr>
+          <tr>
+            <td><strong>Clase C</strong></td>
+            <td>Hasta 16 MHz</td>
+            <td>Cat 3 / Cat 4</td>
+            <td>10BASE-T (Ethernet 10 Mbps), Token Ring</td>
+          </tr>
+          <tr>
+            <td><strong>Clase D</strong></td>
+            <td>Hasta 100 MHz</td>
+            <td>Cat 5e</td>
+            <td>100BASE-TX (Fast Ethernet), 1000BASE-T (Gigabit Ethernet)</td>
+          </tr>
+          <tr>
+            <td><strong>Clase E</strong></td>
+            <td>Hasta 250 MHz</td>
+            <td>Cat 6</td>
+            <td>1000BASE-T, soporte limitado de 2.5G/5GBASE-T</td>
+          </tr>
+          <tr>
+            <td><strong>Clase E<sub>A</sub></strong></td>
+            <td>Hasta 500 MHz</td>
+            <td>Cat 6A</td>
+            <td>10GBASE-T (10 Gbps hasta 100 m)</td>
+          </tr>
+          <tr>
+            <td><strong>Clase F</strong></td>
+            <td>Hasta 600 MHz</td>
+            <td>Cat 7 (blindado S/FTP)</td>
+            <td>10GBASE-T, video banda ancha, entornos de alto ruido</td>
+          </tr>
+          <tr>
+            <td><strong>Clase F<sub>A</sub></strong></td>
+            <td>Hasta 1000 MHz (1 GHz)</td>
+            <td>Cat 7A (blindado S/FTP)</td>
+            <td>10GBASE-T, distribución de señales RF/CATV</td>
+          </tr>
+          <tr>
+            <td><strong>Clase I</strong></td>
+            <td>Hasta 2000 MHz (2 GHz)</td>
+            <td>Cat 8.1 (RJ45 modificado)</td>
+            <td>25GBASE-T y 40GBASE-T (hasta 30 m en Centros de Datos)</td>
+          </tr>
+          <tr>
+            <td><strong>Clase II</strong></td>
+            <td>Hasta 2000 MHz (2 GHz)</td>
+            <td>Cat 8.2 (conectores tipo TERA/GG45)</td>
+            <td>25GBASE-T y 40GBASE-T (hasta 30 m, máxima inmunidad EMI)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
